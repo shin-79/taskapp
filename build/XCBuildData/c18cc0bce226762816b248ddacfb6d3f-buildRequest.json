@@ -1,0 +1,51 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98f298fbd2ff3cf943cad417202746ae20"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98c55f754f2a4256631cf6e7955c79207c"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9881644adaf2ad701878e9176138fbdacd"
+    }
+  ],
+  "containerPath" : "/Users/futon/Desktop/Xcode/taskapp/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/futon/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/futon/Library/Developer/Xcode/DerivedData/Pods-avondumhwgirnbgdilfyrebifhnp/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/futon/Library/Developer/Xcode/DerivedData/Pods-avondumhwgirnbgdilfyrebifhnp/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}
