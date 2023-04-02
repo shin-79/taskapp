@@ -13,7 +13,8 @@
 		1C194F3829C97F690058B6F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C194F3629C97F690058B6F4 /* Main.storyboard */; };
 		1C194F3A29C97F690058B6F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C194F3929C97F690058B6F4 /* Assets.xcassets */; };
 		1C194F3D29C97F690058B6F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C194F3B29C97F690058B6F4 /* LaunchScreen.storyboard */; };
-		1C194F4529C9C7A60058B6F4 /* inputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C194F4429C9C7A60058B6F4 /* inputViewController.swift */; };
+		1C64289629CC34C200EAE163 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C64289529CC34C200EAE163 /* Task.swift */; };
+		1C64289729CD856400EAE163 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C194F4429C9C7A60058B6F4 /* InputViewController.swift */; };
 		D8A2FA672E0877B7B8EEF046 /* Pods_taskapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D945A605512D5F907519A3C /* Pods_taskapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +28,8 @@
 		1C194F3929C97F690058B6F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C194F3C29C97F690058B6F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C194F3E29C97F690058B6F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C194F4429C9C7A60058B6F4 /* inputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputViewController.swift; sourceTree = "<group>"; };
+		1C194F4429C9C7A60058B6F4 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		1C64289529CC34C200EAE163 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = SOURCE_ROOT; };
 		2D945A605512D5F907519A3C /* Pods_taskapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taskapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6DE84444782CC6B9C5A986 /* Pods-taskapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.debug.xcconfig"; path = "Target Support Files/Pods-taskapp/Pods-taskapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,10 +67,11 @@
 		1C194F2F29C97F690058B6F4 /* taskapp */ = {
 			isa = PBXGroup;
 			children = (
+				1C64289529CC34C200EAE163 /* Task.swift */,
 				1C194F3029C97F690058B6F4 /* AppDelegate.swift */,
 				1C194F3229C97F690058B6F4 /* SceneDelegate.swift */,
 				1C194F3429C97F690058B6F4 /* ViewController.swift */,
-				1C194F4429C9C7A60058B6F4 /* inputViewController.swift */,
+				1C194F4429C9C7A60058B6F4 /* InputViewController.swift */,
 				1C194F3629C97F690058B6F4 /* Main.storyboard */,
 				1C194F3929C97F690058B6F4 /* Assets.xcassets */,
 				1C194F3B29C97F690058B6F4 /* LaunchScreen.storyboard */,
@@ -83,7 +86,6 @@
 				4C6DE84444782CC6B9C5A986 /* Pods-taskapp.debug.xcconfig */,
 				06B925A6B6A4FDB38A21939A /* Pods-taskapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,9 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C194F3529C97F690058B6F4 /* ViewController.swift in Sources */,
+				1C64289729CD856400EAE163 /* InputViewController.swift in Sources */,
 				1C194F3129C97F690058B6F4 /* AppDelegate.swift in Sources */,
+				1C64289629CC34C200EAE163 /* Task.swift in Sources */,
 				1C194F3329C97F690058B6F4 /* SceneDelegate.swift in Sources */,
-				1C194F4529C9C7A60058B6F4 /* inputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +372,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,6 +402,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
